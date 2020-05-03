@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.muhammadanasashir.nascon">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".SimpleBlog"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_nascon_logo_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_nascon_logo_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AdminMemories" />
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".Events" />
+        <activity android:name=".PagerAdapter" />
+        <activity android:name=".TabFragmentCS" />
+        <activity android:name=".TabFragmentEE" />
+        <activity android:name=".TabFragmentBusiness" />
+        <activity android:name=".TabFragmentSports" />
+        <activity android:name=".TabFragmentSocials" />
+        <activity android:name=".RegisterStepOne" />
+        <activity android:name=".RegisterStepTwo" />
+        <activity android:name=".RVAdapter" />
+        <activity android:name=".Notifications" />
+        <activity android:name=".Memories" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".Chat" />
+        <activity android:name=".EventDetails" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".AdminHome" />
+        <activity android:name=".AdminEvents" />
+        <activity android:name=".AdminRegistrations" />
+        <activity android:name=".AdminNotifications" />
+        <activity android:name=".AdminEvent_Add" />
+        <activity android:name=".AdminRegisteredTeams" />
+        <activity android:name=".Developers" />
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <!-- Layer 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="?actionBarSize"
+        >
+
+        <Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3c5aa2"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            tools:targetApi="21"
+            >
+
+            <!-- Layer 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:baselineAligned="false"
+                >
+
+                <!-- Layer 3 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#3c5aa2"
+                        app:srcCompat="@drawable/ic_menu_icon"
+                        >
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+                <!-- Layer 3 -->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Chat"
+                        android:textColor="#ffffff"
+                        android:textSize="12pt"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <!-- Layer 3 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:background="#3c5aa2"
+                        app:srcCompat="@drawable/ic_logout"
+                        android:paddingRight="30px"
+                        >
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </Toolbar>
+
+    </LinearLayout>
+
+    <!-- Layer 1 -->
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drwr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!-- Layer 2 -->
+        <!-- Main page -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="9"
+            >
+
+            <!-- Layer 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/id_rv_chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Layer 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="12"
+                android:orientation="vertical"
+                android:background="#3c5aa2"
+                android:minHeight="?attr/actionBarSize"
+                >
+
+                <!-- Layer 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    >
+
+                </LinearLayout>
+
+                <!-- Layer 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:orientation="horizontal"
+                    android:weightSum="30"
+                    >
+
+                    <!-- Layer 4 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+
+                    </LinearLayout>
+
+                    <!-- Layer 4 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="24"
+                        >
+
+                        <EditText
+                            android:id="@+id/msg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/round_corners1"
+                            android:hint="Enter message..."
+                            android:textColor="#3c5aa2"
+                            android:paddingLeft="50px"
+                            android:paddingRight="50px"
+                            >
+
+                        </EditText>
+
+                    </LinearLayout>
+
+                    <!-- Layer 4 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        >
+
+                        <ImageButton
+                            android:id="@+id/cam"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitEnd"
+                            app:srcCompat="@drawable/ic_send_icon"
+                            android:background="@drawable/round_corners"
+                            >
+
+                        </ImageButton>
+
+                    </LinearLayout>
+
+                    <!-- Layer 4 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Layer 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    >
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Layer 2 -->
+        <!-- Navigation Drawer -->
+        <LinearLayout android:layout_gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:background="@drawable/side_nav_bar_background"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    >
+
+                    <ImageView
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        app:srcCompat="@drawable/ic_contact_us"
+                        android:layout_centerInParent="true"
+                        >
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admin Module"
+                        android:textColor="#ffffff"
+                        android:textSize="10pt"
+                        android:layout_centerInParent="true"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:background="#294076"
+                android:orientation="vertical"
+                android:weightSum="5"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_home"
+                            >
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        >
+
+                        <Button
+                            android:id="@+id/id_btn_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Home"
+                            android:textColor="#ffffff"
+                            android:textSize="6pt"
+                            android:background="#294076"
+                            android:paddingHorizontal="100px"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+
+                        </Button>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_notifications"
+                            >
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        >
+
+                        <Button
+                            android:id="@+id/id_btn_events"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Notifications"
+                            android:textColor="#ffffff"
+                            android:textSize="6pt"
+                            android:background="#294076"
+                            android:paddingHorizontal="100px"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+
+                        </Button>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_queries"
+                            >
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        >
+
+                        <Button
+                            android:id="@+id/id_btn_register"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Queries"
+                            android:textColor="#ffffff"
+                            android:textSize="6pt"
+                            android:background="#294076"
+                            android:paddingHorizontal="100px"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+
+                        </Button>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_memories"
+                            >
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        >
+
+                        <Button
+                            android:id="@+id/id_btn_notifications"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Pictures"
+                            android:textColor="#ffffff"
+                            android:textSize="6pt"
+                            android:background="#294076"
+                            android:paddingHorizontal="100px"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+
+                        </Button>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_register"
+                            >
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        >
+
+                        <Button
+                            android:id="@+id/id_btn_memories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Registrations"
+                            android:textColor="#ffffff"
+                            android:textSize="6pt"
+                            android:background="#294076"
+                            android:paddingHorizontal="100px"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+
+                        </Button>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                android:paddingLeft="50px"
+                android:paddingRight="50dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="#294076"
+                android:orientation="vertical"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_logout"
+                            >
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        >
+
+                        <Button
+                            android:id="@+id/id_btn_adminlogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Logout"
+                            android:textColor="#ffffff"
+                            android:textSize="7pt"
+                            android:background="#294076"
+                            android:paddingHorizontal="100px"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+
+                        </Button>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_developers"
+                            >
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        >
+
+                        <Button
+                            android:id="@+id/id_btn_developers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Developers"
+                            android:textColor="#ffffff"
+                            android:textSize="7pt"
+                            android:background="#294076"
+                            android:paddingHorizontal="100px"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+
+                        </Button>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

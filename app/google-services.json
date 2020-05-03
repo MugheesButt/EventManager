@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "216623459140",
+    "firebase_url": "https://nascon-db913.firebaseio.com",
+    "project_id": "nascon-db913",
+    "storage_bucket": "nascon-db913.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216623459140:android:3a336260fa03de53efc511",
+        "android_client_info": {
+          "package_name": "com.muhammadanasashir.highfidelityprototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216623459140-2g7ajlq1g4ijsessde3rdks50207fiog.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.muhammadanasashir.highfidelityprototype",
+            "certificate_hash": "5b232ea774a43c01602fa6ed4f62ef4e3595fb58"
+          }
+        },
+        {
+          "client_id": "216623459140-luulbl0g6kci4cpfi1hapcv5c7jodq45.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.muhammadanasashir.highfidelityprototype",
+            "certificate_hash": "95fc346aaa18fda0ac7c24dbef01036d6bfcf0a6"
+          }
+        },
+        {
+          "client_id": "216623459140-3leahfa6fuspuqe09knr91bg5l1c8d4d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSPBKB4j7qY0-Zbxd6ry07PBqtijmQi6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216623459140-3leahfa6fuspuqe09knr91bg5l1c8d4d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216623459140:android:088583be9d0174deefc511",
+        "android_client_info": {
+          "package_name": "com.muhammadanasashir.nascon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216623459140-1acchdnp7uog2po63c0i68hggdl19als.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.muhammadanasashir.nascon",
+            "certificate_hash": "d02a5e0798543d92deae9c4b4d3fb12f7117d298"
+          }
+        },
+        {
+          "client_id": "216623459140-3leahfa6fuspuqe09knr91bg5l1c8d4d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSPBKB4j7qY0-Zbxd6ry07PBqtijmQi6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216623459140-3leahfa6fuspuqe09knr91bg5l1c8d4d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

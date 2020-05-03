@@ -1,0 +1,473 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="10"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <!-- For space purposes -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <!-- For space purposes -->
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:background="@color/black"
+                >
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:hint="Event Name"
+                    android:textColorHint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:textSize="12pt"
+                    android:singleLine="true"
+                    >
+
+                </EditText>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <!-- For space purposes -->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <!-- For space purposes -->
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:background="@color/black"
+                >
+
+                <EditText
+                    android:id="@+id/EventDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginHorizontal="20px"
+                    android:layout_marginVertical="20px"
+                    android:background="#eff0f2"
+                    android:hint="Event description"
+                    android:textColor="@color/black"
+                    android:paddingHorizontal="20px"
+                    android:paddingVertical="20px"
+                    android:gravity="top"
+                    >
+
+                </EditText>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <!-- For space purposes -->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:weightSum="31"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <!-- Just for space purposes -->
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/Date"
+                android:layout_centerVertical="true"
+                android:text="Date : "
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:hint="End of Feb"
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:singleLine="true"
+                >
+
+            </EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/StartTime"
+                android:layout_centerVertical="true"
+                android:text="Starting Time : "
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/StartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:hint="00:00"
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:singleLine="true"
+                >
+
+            </EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/EndTime"
+                android:layout_centerVertical="true"
+                android:text="Ending Time : "
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/EndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:hint="00:00"
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:singleLine="true"
+                >
+
+            </EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/Fee"
+                android:layout_centerVertical="true"
+                android:text="Registration Fee : "
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/Fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:hint="0000/-"
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:inputType="number"
+                >
+
+            </EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/First"
+                android:layout_centerVertical="true"
+                android:text="First Prize : "
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/First"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:hint="0000/-"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold">
+
+            </EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/Second"
+                android:layout_centerVertical="true"
+                android:text="Second Prize : "
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:hint="0000/-"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold">
+
+            </EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/minMembers"
+                android:layout_centerVertical="true"
+                android:text="Min Members : "
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/minMembers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:hint="1"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold">
+
+            </EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/maxMembers"
+                android:layout_centerVertical="true"
+                android:text="Max Members : "
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/maxMembers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:hint="10"
+                android:textColor="#ff5757"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:inputType="number"
+                >
+
+            </EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            >
+
+            <Button
+                android:id="@+id/id_btn_add_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Add"
+                android:background="@color/black"
+                android:textColor="#ffffff"
+                >
+
+            </Button>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

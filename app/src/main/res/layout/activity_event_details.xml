@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".EventDetails"
+    >
+
+    <!-- Layer 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="?actionBarSize"
+        >
+
+        <Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3c5aa2"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            tools:targetApi="21"
+            >
+
+            <!-- Layer 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10.5"
+                android:baselineAligned="false"
+                >
+
+                <!-- Layer 3 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#3c5aa2"
+                        app:srcCompat="@drawable/ic_menu_icon"
+                        >
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+                <!-- Layer 3 -->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Events"
+                        android:textColor="#ffffff"
+                        android:textSize="12pt"
+                        android:singleLine="true"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <!-- Layer 3 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:background="#3c5aa2"
+                        android:src="@mipmap/ic_nascon_logo_foreground"
+                        android:paddingRight="30px"
+                        >
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </Toolbar>
+
+    </LinearLayout>
+
+    <!-- Layer 1 -->
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drwr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!-- Layer 2 -->
+        <!-- Main page -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="10"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <!-- For space purposes -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+
+                        <!-- For space purposes -->
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:background="#3c5aa2"
+                        >
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Event Name"
+                            android:textColor="#ffffff"
+                            android:textSize="12pt"
+                            android:singleLine="true"
+                            android:paddingHorizontal="50px"
+                            >
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+
+                        <!-- For space purposes -->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+
+                        <!-- For space purposes -->
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:background="#3c5aa2"
+                        >
+
+                        <TextView
+                            android:id="@+id/EventDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_marginHorizontal="20px"
+                            android:layout_marginVertical="20px"
+                            android:background="#eff0f2"
+                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+                            android:textColor="#3c5aa2"
+                            android:paddingHorizontal="20px"
+                            android:paddingVertical="20px"
+                            >
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+
+                        <!-- For space purposes -->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="27"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <!-- Just for space purposes -->
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/Date"
+                        android:layout_centerVertical="true"
+                        android:text="Date : "
+                        android:textColor="#ff5757"
+                        android:textSize="8pt"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="End of Feb"
+                        android:textColor="#ff5757"
+                        android:textSize="8pt"
+                        android:textStyle="bold"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/StartTime"
+                        android:layout_centerVertical="true"
+                        android:text="Starting Time : "
+                        android:textColor="#ff5757"
+                        android:textSize="8pt"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/StartTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:text="00:00"
+                        android:textColor="#ff5757"
+                        android:textSize="8pt"
+                        android:textStyle="bold"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/EndTime"
+                        android:layout_centerVertical="true"
+                        android:text="Ending Time : "
+                        android:textColor="#ff5757"
+                        android:textSize="8pt"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/EndTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="00:00"
+                        android:textColor="#ff5757"
+                        android:textSize="8pt"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/Fee"
+                        android:layout_centerVertical="true"
+                        android:text="Registration Fee : "
+                        android:textColor="#ff5757"
+                        android:textSize="8pt"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/Fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="0000/-"
+                        android:textColor="#ff5757"
+                        android:textSize="8pt"
+                        android:textStyle="bold"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/First"
+                        android:layout_centerVertical="true"
+                        android:text="First Prize : "
+                        android:textColor="#ff5757"
+                        android:textSize="8pt"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/First"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="0000/-"
+                        android:textColor="#ff5757"
+                        android:textSize="8pt"
+                        android:textStyle="bold"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/Second"
+                        android:layout_centerVertical="true"
+                        android:text="Second Prize : "
+                        android:textColor="#ff5757"
+                        android:textSize="8pt"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/Second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="0000/-"
+                        android:textColor="#ff5757"
+                        android:textSize="8pt"
+                        android:textStyle="bold"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <!-- Just for space purposes -->
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    >
+
+                    <Button
+                        android:id="@+id/id_btn_register_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Register"
+                        android:background="#3c5aa2"
+                        android:textColor="#ffffff"
+                        >
+
+                    </Button>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <!-- Just for space purposes -->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Layer 2 -->
+        <!-- Navigation Drawer -->
+        <LinearLayout
+            android:layout_gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:background="@drawable/side_nav_bar_background"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    >
+
+                    <ImageView
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        app:srcCompat="@drawable/ic_events"
+                        android:layout_centerInParent="true"
+                        >
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Participant Module"
+                        android:textColor="#ffffff"
+                        android:textSize="10pt"
+                        android:layout_centerInParent="true"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:background="#294076"
+                android:orientation="vertical"
+                android:weightSum="6"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_home"
+                            >
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        >
+
+                        <Button
+                            android:id="@+id/id_btn_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Home"
+                            android:textColor="#ffffff"
+                            android:textSize="6pt"
+                            android:background="#294076"
+                            android:paddingHorizontal="100px"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+
+                        </Button>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_events"
+                            >
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        >
+
+                        <Button
+                            android:id="@+id/id_btn_events"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Events"
+                            android:textColor="#ffffff"
+                            android:textSize="6pt"
+                            android:background="#294076"
+                            android:paddingHorizontal="100px"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+
+                        </Button>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_register"
+                            >
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        >
+
+                        <Button
+                            android:id="@+id/id_btn_register"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Register"
+                            android:textColor="#ffffff"
+                            android:textSize="6pt"
+                            android:background="#294076"
+                            android:paddingHorizontal="100px"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+
+                        </Button>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_notifications"
+                            >
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        >
+
+                        <Button
+                            android:id="@+id/id_btn_notifications"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Notifications"
+                            android:textColor="#ffffff"
+                            android:textSize="6pt"
+                            android:background="#294076"
+                            android:paddingHorizontal="100px"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+
+                        </Button>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_memories"
+                            >
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        >
+
+                        <Button
+                            android:id="@+id/id_btn_memories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Memories"
+                            android:textColor="#ffffff"
+                            android:textSize="6pt"
+                            android:background="#294076"
+                            android:paddingHorizontal="100px"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+
+                        </Button>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_contact_us"
+                            >
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        >
+
+                        <Button
+                            android:id="@+id/id_btn_contactus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Contact Us"
+                            android:textColor="#ffffff"
+                            android:textSize="6pt"
+                            android:background="#294076"
+                            android:paddingHorizontal="100px"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+
+                        </Button>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                android:paddingLeft="50px"
+                android:paddingRight="50dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="#294076"
+                android:orientation="vertical"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_admin_login"
+                            >
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        >
+
+                        <Button
+                            android:id="@+id/id_btn_adminlogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Admin Login"
+                            android:textColor="#ffffff"
+                            android:textSize="6pt"
+                            android:background="#294076"
+                            android:paddingHorizontal="100px"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+
+                        </Button>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_developers"
+                            >
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        >
+
+                        <Button
+                            android:id="@+id/id_btn_developers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Developers"
+                            android:textColor="#ffffff"
+                            android:textSize="6pt"
+                            android:background="#294076"
+                            android:paddingHorizontal="100px"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+
+                        </Button>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>
