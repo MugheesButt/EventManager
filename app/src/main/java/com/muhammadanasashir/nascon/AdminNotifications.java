@@ -83,7 +83,7 @@ public class AdminNotifications extends AppCompatActivity {
                                     @Override
                                     public void onFailure(JSONObject response) {
                                         Log.d("response", response.toString());
-                                        Toast.makeText(AdminNotifications.this, "Notification not Sent", Toast.LENGTH_LONG).show();
+                                        //Toast.makeText(AdminNotifications.this, "Notification not Sent", Toast.LENGTH_LONG).show();
                                     }
                                 });
                     }
